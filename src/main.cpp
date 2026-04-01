@@ -1,6 +1,9 @@
 #include <QApplication>
 #include <QApplication>
 #include <QSystemTrayIcon>
+#include <QLocale>
+#include <QObject>
+#include <QTranslator>
 #include <QMenu>
 #include <QAction>
 #include <QMessageBox>
@@ -8,6 +11,7 @@
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
+    QTranslator *translator = new QTranslator(&app);
 
     if (!QSystemTrayIcon::isSystemTrayAvailable()) {
         QMessageBox::critical(nullptr, "Systray", "No system tray available");
@@ -16,14 +20,26 @@ int main(int argc, char *argv[]) {
 
     QApplication::setQuitOnLastWindowClosed(false);
 
+    QString language = QLocale::system().name();
+    if (translator->load(":/po/nazar_" + language + ".qm")) {
+        app.installTranslator(translator);
+    } else {
+        QMessageBox::critical(nullptr, "Systray", "No transtation available");
+    }
+
     // Create the tray icon
     QSystemTrayIcon trayIcon;
     // Set tray message
-    trayIcon.setToolTip("Elem Terem Fiş Kem Gözlere Şiş");
+    trayIcon.setToolTip(
+        QCoreApplication::translate("Main","May light shield me from envy and harm.")
+    );
     // Set tray icon
     QIcon ic(":/src/nazar.svg");
     if (ic.isNull()) {
-        QMessageBox::warning(nullptr, "Icon", "Failed to load icon");
+        QMessageBox::warning(nullptr,
+            QCoreApplication::translate("Main","Icon"),
+            QCoreApplication::translate("Main","Failed to load icon")
+        );
     } else {
         trayIcon.setIcon(ic);
         trayIcon.show();
@@ -31,7 +47,9 @@ int main(int argc, char *argv[]) {
 
     // Create a context menu with an Exit action
     QMenu menu;
-    QAction *quitAct = menu.addAction("Exit");
+    QAction *quitAct = menu.addAction(
+        QCoreApplication::translate("Main","Exit")
+    );
 
     QObject::connect(quitAct, &QAction::triggered, &app, &QCoreApplication::quit);
 
