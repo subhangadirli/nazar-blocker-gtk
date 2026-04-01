@@ -8,6 +8,7 @@
 #include <QAction>
 #include <QMessageBox>
 #include <QIcon>
+#include <iostream>
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
@@ -24,7 +25,7 @@ int main(int argc, char *argv[]) {
     if (translator->load(":/po/nazar_" + language + ".qm")) {
         app.installTranslator(translator);
     } else {
-        QMessageBox::critical(nullptr, "Systray", "No transtation available");
+        std::cout << "No transtation available" << std::endl;
     }
 
     // Create the tray icon
