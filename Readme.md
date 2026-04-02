@@ -2,8 +2,7 @@
 
 Protect your computer from nazar.
 
-For the QT one: [https://github.com/subhangadirli/nazar-blocker-gtk](https://github.com/sulincix-other/nazar-blocker)
-
+For the QT one: [https://github.com/sulincix-other/nazar-blocker](https://github.com/sulincix-other/nazar-blocker)
 
 ![](nazar-blocker.png)
 ## Prerequisites
