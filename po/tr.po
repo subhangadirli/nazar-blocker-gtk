@@ -1,0 +1,21 @@
+# Turkish translation for nazar
+# Copyright (C) 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nazar 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "May light shield me from envy and harm."
+msgstr "Elem terem fiş! Kem gözlere şiş!"
+
+msgid "Exit"
+msgstr "Çıkış"

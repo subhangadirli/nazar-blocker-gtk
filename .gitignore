@@ -1,1 +1,3 @@
-qmake_qmake_qm_files.qrc
+build/
+builddir/
+_build/
