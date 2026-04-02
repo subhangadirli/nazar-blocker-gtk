@@ -2,6 +2,8 @@
 
 Protect your computer from nazar.
 
+For the Gtk one: [https://github.com/subhangadirli/nazar-blocker-gtk](https://github.com/sulincix-other/nazar-blocker)
+
 
 ![](nazar-blocker.png)
 ## Prerequisites
