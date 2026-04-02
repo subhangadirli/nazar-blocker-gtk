@@ -1,4 +1,4 @@
-## Nazar Blocker
+## Nazar Blocker GTK
 
 Protect your computer from nazar.
 
