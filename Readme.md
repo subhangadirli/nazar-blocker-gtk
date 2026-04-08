@@ -6,6 +6,8 @@ Protect your computer from nazar.
 
 A minimal system tray application to protect your computer from nazar (the evil eye). Implemented in GTK 3 with AppIndicator support.
 
+**Version:** 1.0 (Stable)
+
 ![](./nazar-blocker.png)
 
 ## Features

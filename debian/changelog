@@ -1,7 +1,10 @@
-nazar-blocker (1.0-1) unstable; urgency=low
+nazar-blocker (1.0-1) stable; urgency=medium
 
-  * Initial Debian package release
+  * Stable 1.0 release
   * GTK 3 implementation with AppIndicator support
   * Turkish translation included
+  * Debian packaging with .desktop file and icon integration
+  * RPM packaging for Fedora and openSUSE
+  * Flatpak support for universal Linux distribution
 
- -- Subhan Gadirli <subhanqedirli@protonmail.com>  Wed, 08 Apr 2026 22:25:00 +0000
+ -- Subhan Gadirli <subhanqedirli@protonmail.com>  Wed, 08 Apr 2026 23:01:00 +0000
