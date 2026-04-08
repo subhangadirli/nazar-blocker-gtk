@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nazar Blocker
+Comment=System tray application for protection from the evil eye
+Exec=nazar
+Icon=nazar
+Type=Application
+Categories=Utility;
+Terminal=false
+StartupNotify=true

@@ -1,3 +1,23 @@
+# Meson build directories
 build/
 builddir/
 _build/
+obj-x86_64-linux-gnu/
+
+# Debian build artifacts
+debian/files
+debian/*.substvars
+debian/debhelper-build-stamp
+debian/.debhelper/
+debian/nazar-blocker/
+
+# Generated .deb packages
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
+
+# Build outputs
+*.o
+*.so
+*.a

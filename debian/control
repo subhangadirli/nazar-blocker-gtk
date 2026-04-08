@@ -1,0 +1,23 @@
+Source: nazar-blocker
+Section: utils
+Priority: optional
+Maintainer: Subhan Gadirli <subhanqedirli@protonmail.com>
+Build-Depends: debhelper-compat (= 13),
+               meson,
+               ninja-build,
+               libgtk-3-dev,
+               libayatana-appindicator3-dev,
+               gettext
+Standards-Version: 4.6.0
+Homepage: https://github.com/SubhanGadirli/nazar-blocker-gtk
+Vcs-Git: https://github.com/SubhanGadirli/nazar-blocker-gtk.git
+Vcs-Browser: https://github.com/SubhanGadirli/nazar-blocker-gtk
+
+Package: nazar-blocker
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: System tray application for protection from the evil eye
+ A minimal system tray application (nazar blocker) that displays a protective
+ evil eye icon. Features AppIndicator integration for modern Linux desktops
+ and multi-language support.

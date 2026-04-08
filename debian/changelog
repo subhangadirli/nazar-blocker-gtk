@@ -1,0 +1,7 @@
+nazar-blocker (1.0-1) unstable; urgency=low
+
+  * Initial Debian package release
+  * GTK 3 implementation with AppIndicator support
+  * Turkish translation included
+
+ -- Subhan Gadirli <subhanqedirli@protonmail.com>  Wed, 08 Apr 2026 22:25:00 +0000

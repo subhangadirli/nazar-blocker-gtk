@@ -35,3 +35,7 @@ executable('nazar',
 install_data('src/nazar.svg',
   install_dir: get_option('datadir') / 'icons' / 'hicolor' / 'scalable' / 'apps',
 )
+
+install_data('nazar.desktop',
+  install_dir: get_option('datadir') / 'applications',
+)
