@@ -1,6 +1,5 @@
 {
   "app-id": "com.github.SubhanGadirli.NazarBlocker",
-  "version": "1.0",
   "runtime": "org.gnome.Platform",
   "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
@@ -9,20 +8,11 @@
     "--share=ipc",
     "--socket=x11",
     "--socket=wayland",
-    "--device=dri"
+    "--device=dri",
+    "--talk-name=org.freedesktop.DBus.Properties",
+    "--talk-name=org.ayatana.indicator.application"
   ],
   "modules": [
-    {
-      "name": "libayatana-appindicator",
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/AyatanaIndicators/libayatana-appindicator.git",
-          "branch": "master"
-        }
-      ]
-    },
     {
       "name": "nazar-blocker",
       "buildsystem": "meson",

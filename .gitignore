@@ -21,3 +21,12 @@ debian/nazar-blocker/
 *.o
 *.so
 *.a
+
+# Flatpak build artifacts
+.flatpak-builder/
+*.flatpak
+
+# RPM build artifacts
+rpmbuild/
+*.rpm
+*.tar.gz

@@ -11,7 +11,7 @@ gtk_dep = dependency('gtk+-3.0')
 
 appindicator_dep = dependency('ayatana-appindicator3-0.1', required: false)
 if not appindicator_dep.found()
-  appindicator_dep = dependency('appindicator3-0.1')
+  appindicator_dep = dependency('appindicator3-0.1', required: false)
 endif
 
 i18n = import('i18n')
@@ -26,9 +26,17 @@ add_project_arguments([
   '-DLOCALEDIR="' + localedir + '"',
 ], language: 'c')
 
+deps = [gtk_dep]
+if appindicator_dep.found()
+  deps += appindicator_dep
+  add_project_arguments('-DHAVE_APPINDICATOR', language: 'c')
+else
+  warning('libayatana-appindicator not found, building without system tray support')
+endif
+
 executable('nazar',
   'src/main.c',
-  dependencies: [gtk_dep, appindicator_dep],
+  dependencies: deps,
   install: true,
 )
 
