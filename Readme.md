@@ -1,14 +1,12 @@
 ## Nazar Blocker GTK
 
-<<<<<<< HEAD
 Protect your computer from nazar.
 
-For the QT one: [https://github.com/sulincix-other/nazar-blocker](https://github.com/sulincix-other/nazar-blocker)
+### For the QT one: [https://github.com/sulincix-other/nazar-blocker](https://github.com/sulincix-other/nazar-blocker)
 =======
 A minimal system tray application to protect your computer from nazar (the evil eye). Implemented in GTK 3 with AppIndicator support.
->>>>>>> 22e26c7 (Update Readme.md with detailed installation instructions and troubleshooting tips)
 
-![](nazar-blocker.png)
+![](./nazar-blocker.png)
 
 ## Features
 - Lightweight system tray icon
