@@ -3,7 +3,7 @@
 Protect your computer from nazar.
 
 ### For the QT one: [https://github.com/sulincix-other/nazar-blocker](https://github.com/sulincix-other/nazar-blocker)
-=======
+
 A minimal system tray application to protect your computer from nazar (the evil eye). Implemented in GTK 3 with AppIndicator support.
 
 ![](./nazar-blocker.png)
